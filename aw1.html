@@ -1,0 +1,105 @@
+<!-- html tekee nettisivuni sillä lisään tekstit linkit ja kaiken muun erittäin helposti-->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettisivu</title>
+
+    <link rel="stylesheet" href="vari.css">
+    <script src="javsku.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="otsikko">
+            <h1>Otsikko</h1>
+            <p>kappale</p>
+            <p></p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="palaute">
+
+            <form method="POST" action="kasittely.php">
+
+                <label for="nimi">nimi:</label>
+                <input type="text" id="nimi" name="nimi" required>
+
+                <br>
+
+                <label for="sahkoposti">sahkoposti:</label>
+                <input type="email" id="sahkoposti" name="sahkoposti">
+
+                <br>
+
+                <label for="palaute">palautekenttä:</label>
+                <textarea id="palaute" name="palaute" rows="5" cols="40"></textarea>
+
+                <p>Merkkejä kirjoitettu: <span id="merkit">0</span></p>
+
+                <button type="button" id="tyhjenna">Tyhjennä palaute</button>
+
+                <br>
+
+                <label for="lisatieto">lisätietoa</label>
+                <textarea id="lisatieto" name="lisatietoboxi" rows="5" cols="40"></textarea>
+
+                <br>
+
+                <h2>Mikä on aihe?</h2>
+
+                <select name="aihe" id="aihe">
+                    <option value="kehu">kehu</option>
+                    <option value="idea">idea</option>
+                    <option value="ongelma">ongelma</option>
+                </select>
+
+                <button type="submit" id="laheta" class="nappi">Lähetä</button>
+
+            </form>
+
+            <p id="onnistumisviesti"></p>
+
+        </div>
+
+        <div class="tiedot">
+
+            <h2>tietoa meistä</h2>
+
+            <p>Olemme ystävällisiä ja auttavia työntekijöitä. Meidän työmme on nopeaa ja laadukasta.</p>
+
+            <p>työntekijät:</p>
+
+            <ul>
+                <li>veeti</li>
+                <li>typpö</li>
+                <li>daniel</li>
+            </ul>
+
+            <nav>
+                <a href="/about">tietoa meistä</a>
+            </nav>
+
+        </div>
+
+    </main>
+
+    <div class="loppu">
+
+        <footer>
+            <h2>Daniel Försti</h2>
+            <p>Ohjelmistokehittäjä</p>
+
+            <a>matti@example.com</a>
+            <a>+358 40 123 4567</a>
+            <span>Kokkola, Suomi</span>
+        </footer>
+
+    </div>
+
+</body>
+</html>

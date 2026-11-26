@@ -1,0 +1,101 @@
+/*css vaihtaa väriä kaikkiin haluamiisi asioihin esim tässä ne vaihtaa lähes kaiken ja sillä sijoitetaan tekstit myös niinkuin haluaa*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 182, 182);
+    padding: 30px 25px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.otsikko {
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+.palaute {
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+.nappi {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tiedot {
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 25px;
+}
+
+.loppu {
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+input,
+textarea {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .otsikko,
+    .palaute,
+    .tiedot,
+    .loppu {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nappi {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
