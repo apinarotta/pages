@@ -1,7 +1,7 @@
 /*css vaihtaa väriä kaikkiin haluamiisi asioihin esim tässä ne vaihtaa lähes kaiken ja sillä sijoitetaan tekstit myös niinkuin haluaa*/
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
