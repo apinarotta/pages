@@ -7,7 +7,7 @@
     <title>Nettisivu</title>
 
     <link rel="stylesheet" href="vari.css">
-    <script src="javsku.js" defer></script>
+    
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
         <div class="palaute">
 
-            <form method="POST" action="kasittely.php">
+            <form if="palautelomake">
 
                 <label for="nimi">nimi:</label>
                 <input type="text" id="nimi" name="nimi" required>
@@ -100,6 +100,6 @@
         </footer>
 
     </div>
-
+<script src="javsku.js" defer></script>
 </body>
 </html>
